@@ -12,7 +12,7 @@ export default function Todo({ id, title, completed, ...props }) {
     <div className="w-full flex items-center gap-1">
       <Checkbox
         checked={isCompleted}
-        onChange={() => setIsCompleted(!isCompleted)}
+        onChange={(e) => setIsCompleted(e.target.checked)}
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}
         crossOrigin={undefined}
