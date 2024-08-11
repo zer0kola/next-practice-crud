@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js TypeScript CRUD Project
 
-## Getting Started
+This is a side project built to study CRUD (Create, Read, Update, Delete) functionality using Next.js with TypeScript. The backend is powered by Supabase, and the project leverages React Query for data fetching and caching. A simple Todo list application was implemented to demonstrate CRUD operations.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js with TypeScript**: The project is built using Next.js, a popular React framework, with TypeScript for type safety and better developer experience.
+- **Supabase Backend**: Supabase is used as the backend to handle authentication, database management, and API routes.
+- **Server Actions**: The project utilizes Next.js's server action feature for handling server-side operations efficiently.
+- **React Query**: React Query is used to manage server state, providing an easy way to fetch, cache, and sync data in the frontend.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## CRUD Implementation
+The project implements basic CRUD operations through a Todo list:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create: Add new tasks to the Todo list.
+- Read: View all tasks from the Todo list.
+- Update: Edit existing tasks.
+- Delete: Remove tasks from the list.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technologies Used
+- Next.js
+- TypeScript
+- Supabase
+- React Query
+- Tailwind
