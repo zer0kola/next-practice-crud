@@ -4,6 +4,7 @@ import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { Database } from "types_db";
 
+// supabase server client 생성 (서버 컴포넌트에서만 사용)
 export const createServerSupabaseClient = async (
   cookieStore: ReturnType<typeof cookies> = cookies(),
   admin: boolean = false
@@ -39,6 +40,7 @@ export const createServerSupabaseClient = async (
   );
 };
 
+// supabase admin server client 생성 (서버 컴포넌트에서만 사용)
 export const createServerSupabaseAdminClient = async (
   cookieStore: ReturnType<typeof cookies> = cookies()
 ) => {
